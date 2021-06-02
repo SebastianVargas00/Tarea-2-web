@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2</title>
+    <link rel="stylesheet" href="css/diseño.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+<div class="box">
+    <div class="box-calculator">
+        <div class="contenido">
+            <div class="historial">
+                <label class="numeroAHistorial" id="numeroAHistorial"></label>
+                <label class="operadorHistorial" id="operadorHistorial"></label>
+                <label class="numeroBHistorial" id="numeroBHistorial"></label>
+            </div>
+            <div class="screen">
+                <input type="text" class="principal-screen" id="principal-screen">
+                <label class="signo-operacion" id="signo-operacion"></label>
+            </div>
+            <div class="botones">
+                <input type="button" value="1" name="btnNumero">
+                <input type="button" value="2" name="btnNumero">
+                <input type="button" value="3" name="btnNumero">
+                <input type="button" value="+" id="btnMas" onclick=" suma()">
+                <br>
+                <input type="button" value="4" name="btnNumero">
+                <input type="button" value="5" name="btnNumero">
+                <input type="button" value="6" name="btnNumero">
+                <input type="button" value="-" id="btnMenos" onclick="resta()">
+                <br>
+                <input type="button" value="7" name="btnNumero">
+                <input type="button" value="8" name="btnNumero">
+                <input type="button" value="9" name="btnNumero">
+                <input type="button" value="x" id="btnMultiplicacion" onclick="multiplicacion()">
+                <br>
+                <input type="button" value="0" name="btnNumero">
+                <input type="button" value="." name="btnNumero" class="btnPunto">
+                <input type="button" value="C" onclick="reinicio()" id="btnC">
+                <input type="button" value="/" id="btnDivision" onclick="division()">
+                <br>
+                <input type="button" value="00" name="btnNumero" class="doble-cero">
+                <input type="button" value="=" class="btnIgual" id="btnIgual" onclick="resultadofinal()">
+            </div>
+        </div>
+    </div>
+</div>
+
+<fieldset>
+    <legend>Almacen de numeros</legend>
+    <div id="lsOutput">
+    </div>
+</fieldset>
+ 
+<script src="js/js.js"></script>
+</body>
+</html>

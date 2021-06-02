@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+h1{
+    text-align: center;
+}
+
+.box{
+    padding: 10px;
+    width: 450px;
+    margin:0px auto;
+}
+
+.box-calculator{
+    padding: 10px;
+    border-style:solid;
+    border-radius: 10px;
+    background-color: #c0c0c0;
+    border-color:white;
+}
+
+.contenido{
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px;  
+}
+
+.lsOutput{
+    margin-bottom: 20px;
+}
+
+.historial{
+    padding: 15px;
+    margin: 10px 100px 10px 10px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    border-style:solid;
+    color:white;
+    font-size: 25px;
+    font-weight: bold;
+    border-collapse: black;
+}
+
+.principal-screen{
+padding: 15px;
+border-radius:10px;
+font-size: 20px;
+margin: 0px 20px 10px 5px;
+font-weight: bold;
+border-width: 4px;
+}
+
+.botones{
+text-align: center;
+}
+
+input[type=button]{
+    border-radius:40px;
+    padding: 28px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.doble-cero,.btnIgual{
+padding: 20px 60px !important;
+}
+
+input[type=button]:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 30px 10px white; 
+}
+
+.signo-operacion{
+    font-size: 30px;
+    margin-left: -10px;
+    font-weight: bold;
+    padding: 2px 8px;
+  
+}
+
+@keyframes parpadeo {
+    
+    from{
+        background-color:grey;
+        box-shadow: 0px 0px 5px 5px grey;
+    }
+
+    to{
+        background-color: white;
+    }
+}
+
+.principal-screen:focus, .btnIgual:focus{
+    animation-name: parpadeo;
+    animation-duration: 1s;
+}
