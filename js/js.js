@@ -97,13 +97,14 @@ for(let i=0;i<localStorage.length;i++){
     const value=localStorage.getItem(key);
     lsOutput.innerHTML += `${key}: ${value} <br/>`;
 }
-    localStorage.clear();
 }
 
 function resultadofinal(){
-    if(lsOutput.innerHTML!=""){
+   if(lsOutput.innerHTML!=""){
         lsOutput.innerHTML="";
     }
+    // Con el if de arriba se borra automaticamente cuando el valor es cambiado
+    //Sin el if se queda los numeros y su resultado 
     if(principalscreen.value !="" && signooperacion.innerHTML!="" && signooperacion.innerHTML!="="){
         operaciones();
     }else{
